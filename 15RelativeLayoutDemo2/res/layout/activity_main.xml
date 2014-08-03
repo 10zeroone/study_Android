@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="kr.android.relative2.MainActivity"
+    >
+    
+    <TextView 
+        android:id="@+id/lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL: "      
+        
+        />
+    <EditText 
+        android:id="@+id/etEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lable"
+        android:layout_alignBaseline="@+id/lable"
+        />
+     <Button 
+         android:id="@+id/btnCancel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/etEntry"    
+         android:layout_alignRight="@+id/etEntry"     
+         android:text="취소 버튼"
+         />
+     <Button 
+         android:id="@+id/btnCommit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/btnCancel"
+         android:layout_alignTop="@+id/btnCancel"
+         android:text="OK"
+         />
+     
+<!-- Layout을 기준으로 배치 - 부모를 기준으로해서 위치 지정 -->
+     
+     <Button 
+         android:id="@+id/btnBottomBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:text="하단 우측 배치"
+         />
+        
+    </RelativeLayout>

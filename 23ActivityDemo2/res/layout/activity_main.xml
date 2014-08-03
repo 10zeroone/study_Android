@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="kr.android.move2.MainActivity"
+     >
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="이름" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvName"
+        android:layout_alignTop="@+id/tvName"      
+        android:layout_marginBottom="5dp"
+        
+        />
+
+    <TextView
+        android:id="@+id/tvKorean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etName"
+        android:text="국어" />
+
+    <EditText
+        android:id="@+id/etKorean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvKorean"
+        android:layout_toRightOf="@+id/tvKorean"
+        android:layout_marginBottom="5dp"
+        android:inputType="number"
+       />
+
+    <TextView
+        android:id="@+id/tvMath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etKorean"
+        android:text="수학" />
+
+    <EditText
+        android:id="@+id/etMath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvMath"
+        android:layout_toRightOf="@+id/tvMath"
+        android:layout_marginBottom="5dp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/tvEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etMath"
+        android:text="영어" />
+
+    <EditText
+        android:id="@+id/etEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvEnglish"
+        android:layout_toRightOf="@+id/tvEnglish"
+        android:layout_marginBottom="5dp"
+        android:inputType="number"
+       />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEnglish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="저장" />
+
+</RelativeLayout>
+

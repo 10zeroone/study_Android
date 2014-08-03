@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.android.edit.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+ <!--
+ 수평크기를 EM크기 기준을 지정 (10자 공간 지정)
+ EM은 가장 큰 글자를 기준으로 한 영역을 의미
+ android:ems="10" 
+ 
+ 싱글라인으로 입력처리
+ android:inputType="text"
+ 
+ 멀티라인으로 입력처리
+ andorid:inputType="textMultiLine"
+ 
+ 힌트기능
+ - 데이터 입력에 대한 가이드 기능
+ - 입력을 시작하면 사라짐
+ android:hint="보여질 문자열"
+ 
+ android:text="보여질 문자열"
+ - 입력한 문자열이 셋팅되어짐, 
+ - 입력시에도 사라지지 않음
+ 
+ 포커주기
+ <requestFocus /> 
+-->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:inputType="textMultiLine"
+        android:hint="text속성 명시, 검색어를 입력하세요~"
+        >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
+

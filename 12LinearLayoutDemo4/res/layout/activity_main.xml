@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.android.linear4.MainActivity"
+    >
+    
+<!--
+margin: view와 view, view와 layout사이의 간격
+android:layout_margin="50dp"
+
+padding: view의 내부 간격
+android:padding="50pd"   
+ -->    
+    
+    <Button 
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마진 테스트"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        />
+    <Button 
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="패팅 테스트"
+        android:paddingLeft="40dp"
+        android:paddingTop="50dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        />
+    
+    </LinearLayout>

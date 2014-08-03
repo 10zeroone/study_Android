@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+    <item>Mouse</item>
+    <item>Computer</item>
+    <item>Moniter</item>
+    <item>Keyboard</item>
+    <item>Clock</item>
+    <item>Cup</item>
+    <item>Book</item>
+    <item>Scanner</item>
+    <item>3DPrinter</item>
+    <item>Wearable Glass</item>
+    <item>Smart                     Phone</item>
+    <item>TV</item>
+    <item>Video</item>
+    <item>Tablet</item>
+    <item>Cam</item>
+    <item>Lazerpointer</item>    
+</order>

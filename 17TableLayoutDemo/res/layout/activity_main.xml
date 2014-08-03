@@ -1,0 +1,25 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.android.tablelayout.MainActivity"
+    >
+<!-- 
+boarder 속성 없음
+열의 갯수는 자동적으로 읽어오지만
+행은 반드시 명시해 주어야 함 
+-->
+    
+    <TableRow >
+        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+    </TableRow>
+    <TableRow >
+        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+    </TableRow>
+</TableLayout>
+

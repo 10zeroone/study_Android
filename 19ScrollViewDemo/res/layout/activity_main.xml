@@ -1,0 +1,624 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.android.scrollview.MainActivity"
+    >
+    
+<!--
+TableLayout태그에서 root에만 있어야 되는 항목 삭제
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" 
+tools:context="kr.android.tablelayout.MainActivity"
+ -->
+    <TableLayout     
+    android:id="@+id/tlTable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    >
+    	<TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+     	<TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow> <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="국어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="영어" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="수학" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	    <TableRow >
+	        <TextView android:text="88" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="77" android:textSize="30sp" android:padding="10dp" />
+	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
+	    </TableRow>
+	</TableLayout>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</ScrollView>
+

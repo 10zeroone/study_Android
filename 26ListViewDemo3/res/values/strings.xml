@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">26ListViewDemo3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_text">새 할일 등록</string>
+    <string name="btn_add">추가</string>
+    <string name="btn_del">삭제</string>
+
+</resources>

@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kr.android.linear5.MainActivity"
+    > 
+<!-- 
+    layout_weight 비율 명시
+    - 같은 비율은 0으로 지정하고
+    - 크기를 키울것은 1로 지정해서 비율로 크기를 조절할 수 있습니다.
+-->
+    
+    <Button 
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="툴바"
+        />
+    <EditText 
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <Button 
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="메뉴바"
+        />
+    
+    </LinearLayout>

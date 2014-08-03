@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.android.list5.MainActivity" >
+
+    <TextView
+        android:id="@+id/tvView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+         />
+
+    
+    <!-- MainActivity에서 Activity를 상속하지 않고 전용인 ListActivity를 상속할 경우
+    ListView의 아이디는 정해진 ID(@android:id/list)를 사용해야 함 -->
+    <ListView
+        android:id="@android:id/list"        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvView"
+         >
+    </ListView>
+
+</RelativeLayout>
+

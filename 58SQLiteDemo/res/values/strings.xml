@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">58SQLiteDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_id">ID</string>
+    <string name="lbl_add">추가</string>
+    <string name="lbl_delete">삭제</string>
+    <string name="lbl_modify">변경</string>
+    <string name="msg_nomemo">메모가 없습니다.</string>
+</resources>

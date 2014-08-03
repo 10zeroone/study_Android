@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.codedragon.smsdemo.MainActivity" >
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Send SMS" />
+
+ <!-- 
+ 	inputType			: 사용자의 입력을 받을 수 있는 EditText의 입력방식을 지정하는 속성
+ 	inputType="phone"	: 입력방식이 핸드폰 번호 형식으로 설정
+  -->   
+    
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSendSMS"
+        android:inputType="phone"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etContents"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/etPhoneNumber"
+        />
+
+</RelativeLayout>

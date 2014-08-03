@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.android.linear.MainActivity"
+     >
+     
+    <!-- @: R class
+    @+id/id명: ID생성 
+    -->
+    
+    <Button 
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="첫번째 버튼"
+        />
+	<Button 
+	     android:id="@+id/button2"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:text="두번째 버튼"
+	     />
+	 <!-- 수평정렬 
+	 LinearLayout의 기본 orientation이 horizontal임	    
+	 -->
+	 
+	 <!-- 모두 같은 비율로 버튼 크기 비율 맞춰보기 -->
+	 
+	 <LinearLayout
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     >
+	     <Button 
+	         android:id="@+id/button3"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:text="세번째 버튼"
+	         />
+	     <Button 
+	         android:id="@+id/button4"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:text="네번째 버튼"
+	         />	     
+	 </LinearLayout>
+</LinearLayout>
+
