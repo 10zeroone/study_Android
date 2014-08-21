@@ -72,20 +72,24 @@ public class MainActivity extends Activity implements OnClickListener{
 		updateDateAndTime();
 	}
 	
+	
 	//날짜와 시간 표시 메소드
 	private void updateDateAndTime(){
 		//포멧 생성해서, TextView에 표시
 		tvDateAndTime.setText(dfDateNadTime.format(dateAndTime.getTime()));
 	}
 	
+	
 	//이벤트 핸들러
 	@Override
 	public void onClick(View v) {
 		if(v.getId()==R.id.btnDateSelect){	//날짜 설정
-			new DatePickerDialog(this, datepickerListener, dateAndTime.get(Calendar.YEAR), dateAndTime.get(Calendar.MONTH), dateAndTime.get(Calendar.DAY_OF_MONTH)).show();		
+			new DatePickerDialog(this, datepickerListener, dateAndTime.get(Calendar.YEAR), 
+					dateAndTime.get(Calendar.MONTH), dateAndTime.get(Calendar.DAY_OF_MONTH)).show();		
 			
 		}else if(v.getId()==R.id.btnTimeSelect){	//시간 설정
-			new TimePickerDialog(this, timepickerListener, dateAndTime.get(Calendar.HOUR_OF_DAY), dateAndTime.get(Calendar.MINUTE), true).show();
+			new TimePickerDialog(this, timepickerListener, dateAndTime.get(Calendar.HOUR_OF_DAY), 
+					dateAndTime.get(Calendar.MINUTE), true).show();
 		}
 	}
 }

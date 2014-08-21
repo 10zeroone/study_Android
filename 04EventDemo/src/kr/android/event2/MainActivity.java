@@ -29,6 +29,10 @@ public class MainActivity extends Activity {
 
         btn = (Button)findViewById(R.id.button1);
         
+        
+//        익명내부 클래스 형태
+//        new Flyer( ){ 메소드 구현 }; 
+        
         //이벤트 소스와 이벤트 리스너 연결하면서 익명내부 클래스 구현
         //OnClickListener인터페이스를 구현한 기본 View생성
         btn.setOnClickListener(new View.OnClickListener() {

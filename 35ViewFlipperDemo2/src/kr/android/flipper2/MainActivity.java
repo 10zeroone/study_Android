@@ -2,13 +2,13 @@ package kr.android.flipper2;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.renderscript.Int2;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.ViewFlipper;
 import android.view.View;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
+
 
 public class MainActivity extends Activity implements View.OnTouchListener{
 	
@@ -29,7 +29,8 @@ public class MainActivity extends Activity implements View.OnTouchListener{
 		setContentView(R.layout.activity_main);
 		
 		//배열 생성
-		imageItems = new int[]{R.drawable.img01,R.drawable.img02,R.drawable.img03, R.drawable.img04, R.drawable.img05, R.drawable.img06, R.drawable.img07, R.drawable.img08, R.drawable.img09};
+		imageItems = new int[]{R.drawable.img01,R.drawable.img02,R.drawable.img03, R.drawable.img04, 
+				R.drawable.img05, R.drawable.img06, R.drawable.img07, R.drawable.img08, R.drawable.img09};
 		
 		myViewFlipper = (ViewFlipper)findViewById(R.id.vfView);
 		
@@ -37,7 +38,8 @@ public class MainActivity extends Activity implements View.OnTouchListener{
 		for(int i : imageItems){
 			ImageView imageView = new ImageView(this);
 			imageView.setImageResource(i);
-			myViewFlipper.addView(imageView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+			myViewFlipper.addView(imageView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 
+					ViewGroup.LayoutParams.MATCH_PARENT));
 		}
 		
 		//이벤트 연결
@@ -55,10 +57,10 @@ public class MainActivity extends Activity implements View.OnTouchListener{
 		
 		//좌표 체크
 		if(event.getAction()==MotionEvent.ACTION_DOWN){
-			//터치 시작 지점 x좌표 저장
+			//터치 시작 지점의 x좌표 저장
 			down_x = event.getX();
 		}else if(event.getAction()==MotionEvent.ACTION_UP){
-			//터치가 끝나고 손을 띤 지점 x좌표 저장
+			//터치가 끝나고 손을 띤 지점의 x좌표 저장
 			up_x = event.getX();
 			
 			if(up_x < down_x){

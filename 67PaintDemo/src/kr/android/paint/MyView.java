@@ -35,6 +35,7 @@ public class MyView extends View{
 					//시작x, 시작y, 끝x, 끝y, Paint객체
 		canvas.drawLine(50, 0, 50, 100, paint);
 		
+		
 		paint.setColor(Color.RED);
 		paint.setStrokeWidth(5);
 		for(int y=30, alpha=255; alpha>2; alpha-=50, y+=10){
@@ -44,6 +45,8 @@ public class MyView extends View{
 			canvas.drawLine(0, y, 100, y, paint);			
 		}
 		
+		
+		
 		//drawRect
 		paint.setColor(Color.WHITE);
 		//테두리 선만 그리기
@@ -52,9 +55,12 @@ public class MyView extends View{
 				//왼쪽, 상단, 오른쪽, 하단, Paint
 		canvas.drawRect(120, 10, 120+80, 10+80, paint);
 		
+		
 		paint.setColor(Color.MAGENTA);
 		paint.setStyle(Paint.Style.FILL);
 		canvas.drawRect(220, 10, 220+80, 10+80, paint);
+	
+		
 		
 		//drawArc
 		paint.setColor(Color.MAGENTA);
@@ -65,15 +71,18 @@ public class MyView extends View{
 				true, 		//중심사용여부
 				paint);
 		
+		
 		//drawOval
 		paint.setColor(Color.YELLOW);
 		canvas.drawOval(new RectF(20, 250, 20+100, 250+50), paint);
+		
 		
 		//drawRoundRect
 		paint.setColor(Color.GREEN);
 		canvas.drawRoundRect(new RectF(150, 250, 150+100, 250+50), 
 				10, 10,	//모서리가 둥근 정도 
 				paint);
+		
 		
 		//drawPath
 		paint.setColor(Color.BLUE);

@@ -13,10 +13,10 @@
         android:text="푸시(Push) 버튼" />
 
     <ImageView
-        android:id="@+id/imgvPride"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/southkorea" />
+        android:id="@+id/ivImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/img" />
 
 </FrameLayout>
 

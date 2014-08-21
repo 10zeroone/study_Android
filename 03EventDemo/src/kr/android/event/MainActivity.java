@@ -25,7 +25,6 @@ import android.view.View;
 //implements View.OnClickListener하여 이벤트 처리 객체 생성
 public class MainActivity extends Activity implements View.OnClickListener{
 	
-	
 	Button btn;
 	//날짜 표현 형식 설정
 	SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss");

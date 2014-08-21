@@ -37,14 +37,14 @@ public class MainActivity extends Activity {
 
 		
 	}
-	//추상 클래스 BaseAdapter를 상속하여 GridView에 이미지를 보여줄 수 있는 기능 구현하는 내부 클래스 구현
+	//추상 클래스 BaseAdapter를 상속하여 GridView에 이미지를 보여줄 수 있는 기능을 하는 내부 클래스 구현
 	public class ImageAdapter extends BaseAdapter{
 
 		//변수 선언
 		//Activity의 부모가 Context
 		private Context context;
 		
-		//뷰의 생성자에는 항상 Context객체가 전달되어야 합니다.
+		//뷰의 생성자에는 항상 Context객체가 전달되어져야 합니다.
 		public ImageAdapter(Context context){
 			this.context = context;
 		}		

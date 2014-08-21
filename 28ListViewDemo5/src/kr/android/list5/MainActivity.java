@@ -18,7 +18,9 @@ import android.widget.TextView;
 public class MainActivity extends ListActivity {
 	
 	//배열 생성
-	String[] items={"미국", "영국", "일본", "아프리카", "프랑스", "독일", "뉴질랜드", "중국", "일본", "방콕", "홍콩", "방글라데시", "인도", "알레스카"};
+	String[] items={"미국", "영국", "일본", "아프리카", "프랑스", "독일", "뉴질랜드", "중국", 
+			"일본", "방콕", "홍콩", "방글라데시", "인도", "알레스카"};
+	
 	TextView myTextView;
 	ArrayAdapter<String> adapter;
 

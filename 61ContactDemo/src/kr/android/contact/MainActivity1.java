@@ -41,7 +41,7 @@ public class MainActivity1 extends Activity implements OnClickListener{
 			startActivityForResult(intent, PICK_CONTACT_REQUEST);
 			
 		}else if(v.getId()==R.id.btnView){
-			//primary key에 해당되는 1번의 people 정보를 가져옴
+			//primary key에 해당되는 번호의 people 정보를 가져옴
 			//content	 : 스키마
 			Toast.makeText(this, id, Toast.LENGTH_SHORT).show();
 			

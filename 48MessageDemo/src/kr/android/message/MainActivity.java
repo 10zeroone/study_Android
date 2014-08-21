@@ -39,7 +39,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			//체인걸어서 속성 호출
 																								//setCancelable(true)	: 백버튼으로 창을 닫을 것인지 설정
 			//new AlertDialog.Builder(this).setTitle("대화상자").setMessage("경고창을 오픈하였습니다!").setCancelable(true).setNeutralButton("닫기", new DialogInterface.OnClickListener() {
-			new AlertDialog.Builder(this).setTitle("대화상자").setMessage("경고창을 오픈하였습니다!").setCancelable(false).setNeutralButton("닫기", new DialogInterface.OnClickListener() {
+			new AlertDialog.Builder(this).setTitle("대화상자")
+				.setMessage("경고창을 오픈하였습니다!").setCancelable(false)
+				.setNeutralButton("닫기", new DialogInterface.OnClickListener() {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
@@ -52,7 +54,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			Toast.makeText(this, "토스트메시지가 오픈되었습니다!",  Toast.LENGTH_SHORT).show();
 			break;			
 		case R.id.btnProgress:
-			final ProgressDialog progressDialog = ProgressDialog.show(this, "프로그레스 바 작동중", "잠시만 기다려주세요!");
+			final ProgressDialog progressDialog = 
+									ProgressDialog.show(this, "프로그레스 바 작동중", "잠시만 기다려주세요!");
 			
 			//익명내부 클래스로 스레드 생성하여 백그라운드 작업
 			new Thread(){

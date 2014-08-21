@@ -10,7 +10,7 @@ import android.widget.ImageView;
 public class MainActivity extends Activity {
 
 	Button btn;
-	ImageView imgv;
+	ImageView ivImage;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		btn = (Button)findViewById(R.id.btnPush);
-		imgv = (ImageView)findViewById(R.id.imgvPride);
+		ivImage = (ImageView)findViewById(R.id.ivImage);
 		
 		//imgv.setVisibility(View.INVISIBLE);
 		
@@ -26,12 +26,12 @@ public class MainActivity extends Activity {
 		btn.setOnClickListener(new OnClickListener() {		
 			@Override
 			public void onClick(View v) {
-				if( imgv.getVisibility() == View.VISIBLE){
+				if( ivImage.getVisibility() == View.VISIBLE){
 					//View가 보여지고 있을 때
-					imgv.setVisibility(View.INVISIBLE);
+					ivImage.setVisibility(View.INVISIBLE);
 				}else{
 					//View가 안보여지고 있을 때
-					imgv.setVisibility(View.VISIBLE);
+					ivImage.setVisibility(View.VISIBLE);
 				}				
 			}
 		});		

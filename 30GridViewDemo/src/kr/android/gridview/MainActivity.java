@@ -11,7 +11,8 @@ import android.widget.AdapterView;
 public class MainActivity extends Activity implements AdapterView.OnItemClickListener{
 
 	//배열 생성
-	String[] items={"호두", "사과", "복숭아", "고추", "수박", "메론", "바나나", "망고", "옥수수", "딸기", "피망", "파인애플", "자두", "살구", "앵두", "코코아", "호박", "토마토", "키위", "배"};
+	String[] items={"호두", "사과", "복숭아", "고추", "수박", "메론", "바나나", 
+			"망고", "옥수수", "딸기", "피망", "파인애플", "자두", "살구", "앵두", "코코아", "호박", "토마토", "키위", "배"};
 	TextView myTextView;
 	GridView myGridView;
 	ArrayAdapter<String> adapter;

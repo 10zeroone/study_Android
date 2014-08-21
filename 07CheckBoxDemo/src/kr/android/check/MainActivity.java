@@ -21,7 +21,7 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        cb = (CheckBox)findViewById(R.id.checkBox1);
+        cb = (CheckBox)findViewById(R.id.cbCheckBox);
         
         //이벤트 소스와 이벤트 리스너 연결
         cb.setOnCheckedChangeListener(this);        

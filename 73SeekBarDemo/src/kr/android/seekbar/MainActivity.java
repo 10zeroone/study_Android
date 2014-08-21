@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
         
         //seekBar 초기화
         seekBar.setMax(255);		//SeekBar 최대길이	: 255
-        seekBar.setProgress(225);	//SeekBar 초기값		: 255	
+        seekBar.setProgress(225);	//SeekBar 초기값	: 255	
         
         //익명내부클래스로 이벤트 핸들러 구현
         seekBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener(){

@@ -20,7 +20,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	Button btnPlay, btnPause, btnReplay;
 	int playbackPosition = 0;
 	File sd_path = Environment.getExternalStorageDirectory();
-	final String AUDIO_PATH ="http://192.168.0.2:8080/HellowWeb/audio02.mp3";
+	final String AUDIO_PATH ="http://192.168.0.2:8080/HellowWeb/audio03.mp3";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +46,24 @@ public class MainActivity extends Activity implements OnClickListener{
 		mediaPlayer.start();
 		Toast.makeText(this, "로컬저장 mp3 재생", Toast.LENGTH_SHORT).show();
 	}
-
+	
+	
+	//SDCard에서 데이터 호출
+	private void playAudioSD() throws Exception{
+		killMediaPlayer();
+		
+		mediaPlayer = new MediaPlayer();
+		mediaPlayer.setDataSource(sd_path.getAbsolutePath()+"/audio02.mp3");
+		mediaPlayer.prepare();
+		mediaPlayer.start();	
+		Toast.makeText(this, "SDCard에서 mp3 재생", Toast.LENGTH_SHORT).show();
+	}
+	
+	
 	//서버에서 데이터 받기
 	private void playAudioServer(String url) throws Exception{
 		killMediaPlayer();
-		
+
 		mediaPlayer = new MediaPlayer();
 		//대상 파일 지정
 		mediaPlayer.setDataSource(url);
@@ -58,23 +71,9 @@ public class MainActivity extends Activity implements OnClickListener{
 		mediaPlayer.start();
 		Toast.makeText(this, "서버에서 mp3 재생", Toast.LENGTH_SHORT).show();
 	}
-	
-	//SDCard에서 데이터 호출
-	private void playAudioSD() throws Exception{
-		killMediaPlayer();
 		
-		mediaPlayer = new MediaPlayer();
-		mediaPlayer.setDataSource(sd_path.getAbsolutePath()+"/audio03.mp3");
-		mediaPlayer.prepare();
-		mediaPlayer.start();	
-		Toast.makeText(this, "SDCard에서 mp3 재생", Toast.LENGTH_SHORT).show();
-	}
 	
-	@Override
-	protected void onDestroy(){
-		super.onDestroy();
-		killMediaPlayer();
-	}
+	
 
 	//MediaPlayer 자원 정리
 	private void killMediaPlayer(){
@@ -83,10 +82,18 @@ public class MainActivity extends Activity implements OnClickListener{
 				//리소스 해제
 				mediaPlayer.release();
 			}catch(Exception e){
-				Log.e("SimpleAudio", "Release Error", e);
+				Log.e("AudioDemo", "Release Error", e);
 			}
 		}
 	}
+	
+	
+	@Override
+	protected void onDestroy(){
+		super.onDestroy();
+		killMediaPlayer();
+	}
+	
 
 	//이벤트 핸들러
 	@Override
@@ -97,15 +104,17 @@ public class MainActivity extends Activity implements OnClickListener{
 			try {
 				//로컬 영역 재생
 				playAudioLocal();
-				
-				//서버영역 재생
-				//playAudioServer(AUDIO_PATH);
+
 				
 				//SDCard영역 재생
 				//playAudioSD();
 				
+				
+				//서버영역 재생
+				//playAudioServer(AUDIO_PATH);
+				
 			} catch (Exception e) {
-				Log.e("SimpleAudio", "Play Error", e);
+				Log.e("AudioDemo", "Play Error", e);
 			}
 			
 		}else if(v.getId()==R.id.btnReplay){	//재생 재개

@@ -44,14 +44,5 @@ public class MainActivity1 extends Activity implements View.OnClickListener{
 		}
 		//인텐트의 매개변수를 통해 액티비티 실행
 		startActivity(intent);
-		
-		
 	}
-	
-	
-	
-	
-
-	
-
 }

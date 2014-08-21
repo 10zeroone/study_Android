@@ -31,7 +31,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		items.add("Two");
 		items.add("Three");
 		
-		//체크박스로 다중 선택할 수  ListView만드는 adapter객체 생성 
+		//체크박스로 다중 선택할 수  있는 ListView만드는 adapter객체 생성 
 		adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice, items);
 		
 		myListView = (ListView)findViewById(R.id.lvList);

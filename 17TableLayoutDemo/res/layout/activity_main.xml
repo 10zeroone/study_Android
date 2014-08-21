@@ -6,9 +6,10 @@
     tools:context="kr.android.tablelayout.MainActivity"
     >
 <!-- 
-boarder 속성 없음
-열의 갯수는 자동적으로 읽어오지만
-행은 반드시 명시해 주어야 함 
+TableLayout
+-boarder 속성 없음
+-열의 갯수는 자동적으로 읽어오지만
+-행은 반드시 명시해 주어야 함 
 -->
     
     <TableRow >
