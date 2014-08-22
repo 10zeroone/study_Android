@@ -43,7 +43,7 @@ public class MainActivity extends ListActivity {
 		menu.add(Menu.NONE, 4, Menu.NONE, "40px");
 	}
 	
-	//컨텍스트 메뉴의 아이템을 클릭에 따른 이벤트 발생에 대한 처리
+	//컨텍스트 메뉴의 아이템 클릭에 따른 이벤트 발생에 대한 처리
 	@Override
 	public boolean onContextItemSelected(MenuItem item){
 		switch(item.getItemId()){

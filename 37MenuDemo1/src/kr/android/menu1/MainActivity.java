@@ -12,7 +12,8 @@ import android.widget.ArrayAdapter;
 public class MainActivity extends ListActivity {
 	
 	//배열 생성
-	String[] items ={"바나나", "딸기", "배", "멜론", "사과", "망고", "감", "땅콩", "호두", "밀감", "귤", "오렌지", "애플", "파인애플", "코코아"};
+	String[] items ={"바나나", "딸기", "배", "멜론", "사과", "망고", "감", "땅콩", 
+			"호두", "밀감", "귤", "오렌지", "애플", "파인애플", "코코아"};
 	
 	ArrayAdapter<String> adapter;
 

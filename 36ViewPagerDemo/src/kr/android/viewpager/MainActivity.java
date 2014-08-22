@@ -68,7 +68,9 @@ public class MainActivity extends Activity {
 			myLayoutInflater = LayoutInflater.from(context);
 		}
 		
-		//ViewPager에서 사용할 View객체 생성/등록 하도록 instantiateItem() 재정의		
+		//ViewPager에서 사용할 View객체 생성/등록 하도록 instantiateItem() 재정의
+		//pager		: ViewPager
+		//position	: 몇번째 화면을 구성할지에 대한  index
 		@Override
 		public Object instantiateItem(View pager, int position){			
 			View v = null;
@@ -111,6 +113,7 @@ public class MainActivity extends Activity {
 		}
 
 		//instantiateItem메서드에서 생성된 객체를 이용할 것인지를 체크
+		//true	:화면 출력, false	: 화면 미출력
 		@Override
 		public boolean isViewFromObject(View view, Object object) {
 			return view==object;

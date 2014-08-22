@@ -12,7 +12,7 @@
     never				: 기본값으로서 항상 액션 아이템으로 표시하지 않음
     withText			: 메뉴 항목의 아이콘과 텍스트를 함께 액션 아이템으로 표시
     always				: 항상 액션 아이템으로 표시
-    android:orderInCategory=	: 여러 액션 아이템이 나열되는 순서를 정의하는 속성(0이 우선순위가 가장 높음)		
+    android:orderInCategory	: 여러 액션 아이템이 나열되는 순서를 정의하는 속성(0이 우선순위가 가장 높음)		
     
      -->
     <item 
