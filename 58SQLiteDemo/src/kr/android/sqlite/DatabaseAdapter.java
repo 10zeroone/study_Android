@@ -33,6 +33,9 @@ public class DatabaseAdapter {
 	static final String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
 	//============================상수정의 끝
 
+
+	//데이터베이스를 이용한 어플리케이션의 컨텍스트
+	private Context context;
 	
 	//DatabaseAdapter 생성자 생성
 	public DatabaseAdapter(Context context){
@@ -43,8 +46,7 @@ public class DatabaseAdapter {
 	//Connection객체과 동일한 기능을 수행
 	private SQLiteDatabase db;
 	
-	//데이터베이스를 이용한 어플리케이션의 컨텍스트
-	private Context context;
+	
 	
 	
 	
@@ -61,11 +63,13 @@ public class DatabaseAdapter {
 			db = (new DatabaseHelper(context)).getReadableDatabase();
 		}
 	}
+	
 	//SQLiteDatabase 자원정리
 	public void close(){
 		//데이터베이스 사용을 닫기 위해 중지
 		if(db!=null){db.close();}
 	}
+	
 	
 	
 	
@@ -99,6 +103,7 @@ public class DatabaseAdapter {
 				MEMO_ID + " DESC"	//ORDER BY
 				);
 	}
+	
 	
 
 	//검색
@@ -143,13 +148,7 @@ public class DatabaseAdapter {
 	
 	
 	
-	//지정된 ID의 행 삭제
-	public void deleteMemo(String id){
-		db.delete(TABLE_NAME, 		//테이블 명
-				MEMO_ID + "= ?", 	//WHERE
-				new String[]{id});	//WHERE절 ?에 전달할 데이터(배열)
-		
-	}
+	
 	
 	
 	//업데이트
@@ -164,6 +163,19 @@ public class DatabaseAdapter {
 				MEMO_ID + "=?", 		//WHERE절
 				new String[]{id});		//WHERE절 ?에 전달될 PRIMARY KEY
 	}
+	
+	
+	
+	
+	
+	//지정된 ID의 행 삭제
+	public void deleteMemo(String id){
+		db.delete(TABLE_NAME, 		//테이블 명
+				MEMO_ID + "= ?", 	//WHERE
+				new String[]{id});	//WHERE절 ?에 전달할 데이터(배열)
+		
+	}
+	
 	
 	
 	

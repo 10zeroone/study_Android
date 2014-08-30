@@ -35,8 +35,8 @@ public class MainActivity extends Activity {
 		
 		
 		//HTML 직접 생성
-/*		String msg ="<html><body>Hellow Android World!!!</body></html>";		
-												//mimeType	:문서타입
+		/*String msg ="<html><body>Hellow Android World!!!</body></html>";		
+		//baseURL, data, mimeType	:문서타입, encoding, historyUrl
 		browser.loadDataWithBaseURL(null, msg, "text/html", "UTF-8", null);*/
 		
 		
@@ -56,7 +56,9 @@ public class MainActivity extends Activity {
 		@Override
 		public boolean onJsAlert(WebView view, String url, String message, JsResult result){
 			//message	: '경고창'
-			new AlertDialog.Builder(MainActivity.this).setTitle("경고").setCancelable(false).setNeutralButton("확인", new DialogInterface.OnClickListener() {
+			new AlertDialog.Builder(MainActivity.this).setTitle("경고")
+			.setCancelable(false)
+			.setNeutralButton("확인", new DialogInterface.OnClickListener() {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int which) {

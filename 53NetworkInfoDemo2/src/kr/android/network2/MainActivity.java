@@ -20,7 +20,8 @@ public class MainActivity extends Activity {
 		tvInfo = (TextView)findViewById(R.id.tvInfo);
 		
 		//네트워크 정보를 얻기위해서 ConnectivityManager호출
-		ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+		ConnectivityManager connectivityManager = 
+				(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
 		
 		//WiFi정보 호출
 		NetworkInfo networkInfo = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
@@ -34,8 +35,8 @@ public class MainActivity extends Activity {
 		//모바일 정보 호출
 		networkInfo = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
 		boolean isMobileAvailable = networkInfo.isAvailable();
-		boolean isMobileconn = networkInfo.isConnected();
+		boolean isMobileConn = networkInfo.isConnected();
 		tvInfo.append("모바일 연결 가능: " + isMobileAvailable + "\n");
-		tvInfo.append("모바일 연결 상태: " + isMobileconn + "\n");		
+		tvInfo.append("모바일 연결 상태: " + isMobileConn + "\n");		
 	}
 }

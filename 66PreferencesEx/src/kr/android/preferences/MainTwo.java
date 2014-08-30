@@ -26,7 +26,8 @@ public class MainTwo extends Activity{
 			@Override
 			public void onClick(View v) {
 				//1.SharedPreferences객체 호출
-				SharedPreferences sharedPreferences = getSharedPreferences("PreferencesEx", MODE_PRIVATE);
+				SharedPreferences sharedPreferences = 
+						getSharedPreferences("PreferencesEx", MODE_PRIVATE);
 				//2.프리퍼런스의 데이터 읽기
 				tvViewTwo.setText(sharedPreferences.getString("text", ""));
 				

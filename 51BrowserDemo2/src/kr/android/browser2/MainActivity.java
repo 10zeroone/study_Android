@@ -20,18 +20,25 @@ public class MainActivity extends Activity {
 
 		wvWeb = (WebView)findViewById(R.id.wvWeb);
 		
+		
+		//기본URL설정
+		//wvWeb.loadUrl("http://m.naver.com");		
+		//wvWeb.loadUrl("http://m.daum.net");
+		
+		
 		//이벤트 연결하기 위해 등록
 		wvWeb.setWebViewClient(new MyWebClient());
 		
 		//자바스크립트 허용
 		WebSettings webSettings = wvWeb.getSettings();
 		webSettings.setJavaScriptEnabled(true);
-		//ZOOM기능 사용
-		webSettings.setBuiltInZoomControls(true);
 		
 		//기본URL설정
 		//wvWeb.loadUrl("http://m.naver.com");		
 		wvWeb.loadUrl("http://m.daum.net");
+		
+		//ZOOM기능 사용
+		webSettings.setBuiltInZoomControls(true);
 		
 		//ZOOM기능 확인하기위해 PC버전의 URL설정
 		//wvWeb.loadUrl("http://www.korea.com");
@@ -58,7 +65,9 @@ public class MainActivity extends Activity {
 			wvWeb.goBack();
 		}else if(keyCode==KeyEvent.KEYCODE_BACK && !wvWeb.canGoBack()){
 			//이전 페이지가 없는 경우
-			new AlertDialog.Builder(this).setTitle("종료 확인").setMessage("종료하시겠습니까?").setCancelable(false).setPositiveButton("예", new DialogInterface.OnClickListener() {
+			new AlertDialog.Builder(this).setTitle("종료 확인").setMessage("종료하시겠습니까?")
+					.setCancelable(false)
+					.setPositiveButton("예", new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {

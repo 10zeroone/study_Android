@@ -78,6 +78,8 @@ public class MainActivity extends Activity {
 			
 			try{
 				fis = new FileInputStream(rFile);
+				//available()메소드를 이용해서 파일 사이즈의 byte count를
+				//얻어서 이를 이용해서 byte 배열 생성
 				byte[] reader = new byte[fis.available()];
 				fis.read(reader);
 				

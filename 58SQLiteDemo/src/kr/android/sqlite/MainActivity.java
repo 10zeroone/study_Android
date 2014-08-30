@@ -42,10 +42,13 @@ public class MainActivity extends ListActivity implements OnClickListener {
 			button.setOnClickListener(this);
 		}
 		
+		
+		
 		//삭제, 수정버튼 비활성화
 		setEnabled(false);
 	}
 
+	
 	
 	//데이터 읽어오기
 	@Override
@@ -84,6 +87,14 @@ public class MainActivity extends ListActivity implements OnClickListener {
 		databaseAdapter.close();
 	}
 
+	//검색된 내용 표시
+	private void toastMemo(String str){
+		if(str.length() ==0){
+			return;
+		}
+		String memo = databaseAdapter.searchMemo(str);
+		Toast.makeText(this, memo, Toast.LENGTH_LONG).show();
+	}
 
 	
 	//이벤트 처리
@@ -112,8 +123,11 @@ public class MainActivity extends ListActivity implements OnClickListener {
 		//TextView 초기화
 		tv_mCurrentID.setText("ID");
 		
+		
+		
 		//삭제, 수정버튼 비활성화
 		setEnabled(false);
+		
 		
 		//추가된 데이터를 읽어옴
 		cursor = databaseAdapter.fetchAllMemo();
@@ -133,11 +147,16 @@ public class MainActivity extends ListActivity implements OnClickListener {
 		etEditMemo.setText(tv_Content.getText());
 		tv_mCurrentID.setText(Long.toString(id));
 		
+		
 		//삭제, 수정버튼 활성화
 		setEnabled(true);
+		
 		toastMemo(tv_Content.getText().toString()); 	//서치
 		
 	}
+	
+	
+	
 	
 	
 	//삭제, 수정버튼 상태 변경
@@ -150,13 +169,4 @@ public class MainActivity extends ListActivity implements OnClickListener {
 		}
 	}
 	
-	
-	//검색된 내용 표시
-	private void toastMemo(String str){
-		if(str.length() ==0){
-			return;
-		}
-		String memo = databaseAdapter.searchMemo(str);
-		Toast.makeText(this, memo, Toast.LENGTH_LONG).show();
-	}
 }

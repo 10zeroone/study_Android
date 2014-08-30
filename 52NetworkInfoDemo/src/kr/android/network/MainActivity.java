@@ -19,7 +19,9 @@ public class MainActivity extends Activity {
 		tvInfo = (TextView)findViewById(R.id.tvInfo);
 		
 		//네트워크 정보를 얻기위해서 ConnectivityManager호출
-		ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+		ConnectivityManager connectivityManager = 
+				(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+		
 		
 		//모든 정보의 객체저장
 		NetworkInfo[] networkInfos = connectivityManager.getAllNetworkInfo();
