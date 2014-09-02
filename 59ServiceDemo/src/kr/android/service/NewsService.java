@@ -66,7 +66,6 @@ public class NewsService extends Service{
 					@Override
 					public void run() {
 						Toast.makeText(NewsService.this, msg, Toast.LENGTH_LONG).show();
-						
 					}
 				});
 				

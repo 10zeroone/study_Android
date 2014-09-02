@@ -180,7 +180,7 @@ public class MainActivity extends Activity {
  * Surface의 생성, 변경, 종료에 대한 이벤트 처리 
  * 
 */
-//고속영상을 제공하는 뷰 정의
+//고속영상을 제공하는 뷰 정의 (고속영상 처리 위해 SurfaceView상속한 클래스 정의)
 class MyCameraSurface extends SurfaceView implements SurfaceHolder.Callback{
 	
 	//객체 선언

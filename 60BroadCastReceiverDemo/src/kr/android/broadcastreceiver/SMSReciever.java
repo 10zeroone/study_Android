@@ -51,6 +51,7 @@ public class SMSReciever extends BroadcastReceiver{
 		}		
 	}	
 	
+	
 	//Notification Status Bar에 표시될 Notification 생성
 	//Context: 어플리케이션의 정보를 가짐
 	private void addNotificationStatusBar(Context context, String address, String message){
@@ -60,17 +61,22 @@ public class SMSReciever extends BroadcastReceiver{
 		//2. Notification.Builder 객체 생성
 		Notification.Builder builder = new Notification.Builder(context);
 		
-		//알림 메시지 클릭시 이동할 Activity지정
+		//3.알림 메시지 클릭시 이동할 Activity지정
 		Intent intent = new Intent(context, NotificationMessage.class);
 		
-		//Activity 영역에 있는 것이 아니므로  Intent로 정보 전송할 수 없기 대문에 PendingIntent로 전달해야 됨
+		//4.Activity 영역에 있는 것이 아니므로  Intent로 정보 전송할 수 없기 대문에 PendingIntent로 전달해야 됨
 		PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+		//context		: 브로드 캐스트 실행할 PendingIntent의 Context
+		//requestCode	: sender에게 요청 코드(현재 사용되지 않음)
+		//intent		: 브로드캐스트 할 Intent
+		//flags			: 
 		/* 사용가능한 flags:
 		 * FLAG_CANCEL_CURRENT	: 이전에 생성한 PendingIntent는 취소하고, 새롭게 하나를 만듬
 		 * FLAG_NO_CREATE		: 현재 생성된 PendingIntent를 반환
 		 * FLAG_ONE_SHOT		: 이 플래그를 이용해 생성된 PendingIntent는 단 한번 밖에 사용될 수 없음
 		 * FLAG_UPDATE_CURRENT	: 만일 이미 생성된 PendingIntent가 존재한다면 해당 intent의 내용을 변경	
 		*/
+		//5.builder객체 설정
 		//알림창 최상단의 아이콘 옆에 보여지는 알림메시지 제일 상단에 표시		
 		builder.setTicker(address + " : " + message);
 		//알림메시지를 클릭해서 Activity를 호출하면 자동으로 알림메시지 제거(true:제거, false:미제거)
@@ -84,7 +90,7 @@ public class SMSReciever extends BroadcastReceiver{
 		//이동할 Activity정보를 갖고 잇는 PendingIntent등록 
 		builder.setContentIntent(pendingIntent);
 		
-		//생성된 알림메시지에  ID를 부여해서 NotificationManager에 등록
+		//6.생성된 알림메시지에  ID를 부여해서 NotificationManager에 등록
 													//minSDK version 16으로 지정
 		notificationManager.notify(NOTIFY_ID, builder.build());
 	}
