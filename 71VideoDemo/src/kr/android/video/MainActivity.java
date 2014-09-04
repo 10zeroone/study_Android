@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
 
 		vwVideo = (VideoView)findViewById(R.id.vwVideo);
 		vwVideo.requestFocus();
+		
 		//미디어 컨트롤러 생성 후 등록
 		vwVideo.setMediaController(new MediaController(this));
 		
@@ -45,31 +46,26 @@ public class MainActivity extends Activity {
 			Toast.makeText(MainActivity.this, getFilesDir().getAbsolutePath().toString(), Toast.LENGTH_LONG).show();
 						
 			
-			/*
+			
 			//SD카드에서 동영상 호출
 			vwVideo.setVideoPath(sd_path.getAbsolutePath()+ "/movie02.mp4");
 			Toast.makeText(MainActivity.this, sd_path.getAbsolutePath().toString(), Toast.LENGTH_LONG).show();
-			*/
 			
 			
-			/*
+			
+			
 			//서버에서 동영상 호출			
 			//VideoView객체에서 재상할 동영상 설정
 			vwVideo.setVideoURI(Uri.parse(VIDEO_path));
 			Toast.makeText(MainActivity.this, VIDEO_path, Toast.LENGTH_LONG).show();
-			*/
+			
 			
 		}catch(Exception e){
 			Log.e("VideoDemo", "Play Error", e);
 		}		
 	}
 	
-	//raw 폴더에서 파일을 호출해서 InputStream으로 가공
-	private void rawToFile(Context context, int resID, String fileName) throws Exception{
-		InputStream inputStream = context.getResources().openRawResource(resID);
-		
-		intoFile(getApplication(), inputStream, fileName);
-	}
+	
 	
 	//InputStream을 내장영역의 파일로 저장
 	private void intoFile(Context context, InputStream inputStream, String fileName) throws Exception{
@@ -79,6 +75,7 @@ public class MainActivity extends Activity {
 		
 		try{
 			//MODE_WORLD_READABLE: 경로를 지정해서 파일 접근 가능
+			//deprecated 됨
 			outputStream = openFileOutput(fileName, MODE_WORLD_READABLE);
 			
 			while(true){
@@ -92,5 +89,14 @@ public class MainActivity extends Activity {
 			if(outputStream!=null){ try{outputStream.close();}catch(IOException e){e.printStackTrace();} }
 			if(inputStream!=null){ try{inputStream.close();}catch(IOException e){e.printStackTrace();} }
 		}
+	}
+	
+	
+	
+	//raw 폴더에서 파일을 호출해서 InputStream으로 가공
+	private void rawToFile(Context context, int resID, String fileName) throws Exception{
+		InputStream inputStream = context.getResources().openRawResource(resID);
+
+		intoFile(getApplication(), inputStream, fileName);
 	}
 }

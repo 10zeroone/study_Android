@@ -27,7 +27,7 @@ public class MainActivity extends Activity implements OnMarkerClickListener, OnI
 	static final LatLng ADDRESS_GANGNAMSTATION = new LatLng(37.498155, 127.027642);
 	static final LatLng ADDRESS_STUDY = new LatLng(37.538683, 127.135346);
 	
-	//static final LatLng ADDR_GANGNAMSTYLE = new LatLng(37.498751, 127.027675);
+	static final LatLng ADDR_GANGNAMSTYLE = new LatLng(37.498751, 127.027675);
 	//static final LatLng ADDR_GANGNAMSTYLE2 = new LatLng(37.498691, 127.026580);
 	
 	@Override
@@ -65,11 +65,15 @@ public class MainActivity extends Activity implements OnMarkerClickListener, OnI
 	
 	//마커 표시
 	private void addBasicMarker(){
-		map.addMarker(new MarkerOptions().position(ADDRESS_GANGNAMSTATION).title("강남역").snippet("나는 강남스타일~").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+		map.addMarker(new MarkerOptions().position(ADDRESS_GANGNAMSTATION)
+				.title("강남역").snippet("나는 강남스타일~")
+				.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 		//map.addMarker(new MarkerOptions().position(ADDR_GANGNAMSTYLE).title("강남스테이지").snippet("여기서 사진 찍어요~").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 		
 		//마커 모양 변경
-		//map.addMarker(new MarkerOptions().position(ADDR_GANGNAMSTYLE).title("강남스테이지").snippet("여기서 사진 찍어요~").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+		map.addMarker(new MarkerOptions().position(ADDR_GANGNAMSTYLE)
+				.title("강남스테이지").snippet("여기서 사진 찍어요~")
+				.icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
 		//map.addMarker(new MarkerOptions().position(ADDR_GANGNAMSTYLE2).title("강남스테이지").snippet("여기서 사진 찍어요~").icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_flag)));
 		
 		map.addMarker(new MarkerOptions().position(ADDRESS_STUDY).title("미래인재").snippet("열공 중~").icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_flag)));

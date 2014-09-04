@@ -53,8 +53,14 @@ public class MainActivity extends Activity implements OnClickListener{
 		killMediaPlayer();
 		
 		mediaPlayer = new MediaPlayer();
+		//1)대상 파일 지정
+		//오디오파일을 지정된 형식을 통해 읽어오기
 		mediaPlayer.setDataSource(sd_path.getAbsolutePath()+"/audio02.mp3");
+		//2)재생 준비
+		//대용량인 경우 환경에 따라 상당한 시간이 걸릴 수 있으므로
+		//미디어 플레이어는 대상 파일에서 몇 프레임을 미리 읽어와 정보를 확인합니다.
 		mediaPlayer.prepare();
+		//3)파일 재생
 		mediaPlayer.start();	
 		Toast.makeText(this, "SDCard에서 mp3 재생", Toast.LENGTH_SHORT).show();
 	}
@@ -95,6 +101,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	}
 	
 
+	
 	//이벤트 핸들러
 	@Override
 	public void onClick(View v) {
