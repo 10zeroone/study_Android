@@ -2,7 +2,7 @@
 
 버튼 좌우 크기 늘리기
 -wrap_content: 글을 중심으로 상대적으로 감싸게 됨
--match_parent: 모니터와 매치
+-match_parent: 화면과  매치하여 크기 확장
 
 익명 내부 클래스로 클릭 이벤트 처리
 */
@@ -29,6 +29,8 @@ public class MainActivity extends Activity {
 
         btn = (Button)findViewById(R.id.button1);
         
+        //앱 실행시 처음 부터 날짜와 시간 표시
+//        updateTime();
         
 //        익명내부 클래스 형태
 //        new Flyer( ){ 메소드 구현 }; 

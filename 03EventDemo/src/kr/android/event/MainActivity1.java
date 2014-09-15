@@ -20,6 +20,7 @@ public class MainActivity1 extends Activity {
 	
 	Button btn;
 	//날짜 표현 형식 설정
+												//년-월-일 AM/PM 시(0~23):분:초
 	SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss");
 
     @Override
@@ -27,7 +28,9 @@ public class MainActivity1 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        btn = (Button) findViewById(R.id.button1);  
+        //findViewById()메소드를 이용해 해당 ID의 객체 참조
+        btn = (Button) findViewById(R.id.button1);
+        
         updateTime();
     }
     

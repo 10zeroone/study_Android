@@ -27,6 +27,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 	
 	Button btn;
 	//날짜 표현 형식 설정
+											//년-월-일 AM/PM 시(0~23):분:초
 	SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss");
 
     @Override

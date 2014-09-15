@@ -6,6 +6,13 @@
     tools:context="kr.android.event2.MainActivity"
     tools:ignore="MergeRootFrame" >
 
+<!-- 
+버튼 좌우 크기 늘리기
+-wrap_content: 글을 중심으로 상대적으로 감싸게 됨
+-match_parent: 화면과  매치하여 크기 확장
+ -->    
+    
+    
     <Button
         android:id="@+id/button1"        
         android:layout_width="match_parent"

@@ -2,8 +2,15 @@
 
 - 자동으로 종,회비율 맞춰줌
 
+
+영역별 R class 호출 방법:
+java: 	R.drawable.southkorea
+xml:	@drawable/southkorea
+
+
 southkorea.jpg
 영문과 숫자만 사용, 소문자만 사용(구분을 용이하게 하기 위해)
+
 
 southkorea.jpg
 southkorea.png
@@ -12,9 +19,6 @@ southkorea1.jpg
 southkorea2.png
 형태로 파일명을 구분해 주어야 함
 
-영역별 R class 호출 방법:
-java: 	R.drawable.southkorea
-xml:	@drawable/southkorea
 
 */
 package kr.android.image;

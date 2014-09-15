@@ -7,27 +7,32 @@
     tools:ignore="MergeRootFrame" >
 
  <!--
- 수평크기를 EM크기 기준을 지정 (10자 공간 지정)
- EM은 가장 큰 글자를 기준으로 한 영역을 의미
- android:ems="10" 
+
+android:ems="10" 
+글꼴과 상관없이 동일한 텍스트 크기 표시
+- 수평크기를 EM크기 기준을 지정 (10자 공간 지정)
+- EM은 가장 큰 글자를 기준으로 한 영역을 의미
+
+
+android:inputType="text" 
+싱글라인으로 입력처리
+
+andorid:inputType="textMultiLine" 
+멀티라인으로 입력처리
  
- 싱글라인으로 입력처리
- android:inputType="text"
+android:hint="보여질 문자열"
+힌트기능
+- 데이터 입력에 대한 가이드 기능
+- 입력을 시작하면 사라짐
+
  
- 멀티라인으로 입력처리
- andorid:inputType="textMultiLine"
+android:text="보여질 문자열"
+- 입력한 문자열이 셋팅되어짐, 
+- 입력시에도 사라지지 않음
+
+<requestFocus /> 
+포커스 주기
  
- 힌트기능
- - 데이터 입력에 대한 가이드 기능
- - 입력을 시작하면 사라짐
- android:hint="보여질 문자열"
- 
- android:text="보여질 문자열"
- - 입력한 문자열이 셋팅되어짐, 
- - 입력시에도 사라지지 않음
- 
- 포커스 주기
- <requestFocus /> 
 -->
     <EditText
         android:id="@+id/editText1"
