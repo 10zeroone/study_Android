@@ -10,16 +10,16 @@
  gravity: 
  - 자신 내부의 구성요소의 위치 정의
  - 레이아웃에 명시해서 View의 위치를 지정 (일반적, 레이아웃에 명시해서 view(Button, TextView)를 제어)
- - 버튼에 명시해 버튼 내의 text의 위치 지정
+ - 버튼에 명시하면 버튼 내의 text의 위치 지정
  
  layout_gravity: 
  - 부모를 기준으로 자신의 위치 지정
  - view(Button, TextView)에 명시해서 레이아웃 기준으로 View가 배치되는 위치 지정    
  
  중앙정렬 속성값:
- center: 정중앙
- center_vertical: 좌측 중앙
- center_horizontal: 상단 중앙
+ - center: 정중앙
+ - center_vertical: 좌측 중앙
+ - center_horizontal: 상단 중앙
  
   -->
     <Button 
