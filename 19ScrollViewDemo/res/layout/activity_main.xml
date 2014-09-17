@@ -609,16 +609,6 @@ tools:context="kr.android.tablelayout.MainActivity"
 	        <TextView android:text="99" android:textSize="30sp" android:padding="10dp" />
 	    </TableRow>
 	</TableLayout>
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 </ScrollView>
 

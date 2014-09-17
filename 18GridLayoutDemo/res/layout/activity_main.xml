@@ -16,8 +16,9 @@
     
 <!-- 
 주석처리해 주기위해 LinearLayout로 바꾼 후 Gridlayout 표시
-GridLayout은 API 14(안드로이드 4.0)부터 사용 가능하기 때문에 AndroidManifest.xml의 min SDK버전을 14이상으로 설정해줘야 
-사용가능합니다.
+
+GridLayout은 API 14(안드로이드 4.0)부터 사용 가능하기 때문에 
+AndroidManifest.xml의 min SDK버전을 14이상으로 설정해줘야 사용가능합니다.
 이하 버전일 경우 인스톨이 되지 않고 에러가 납니다. 인스톨이 되었어도 기능사용시 에러남
 -->
      
