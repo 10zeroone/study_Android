@@ -22,7 +22,7 @@ import android.view.View;
 
 public class MainActivity extends Activity implements View.OnClickListener{
 	
-	Button btnButton1, btnButton2;
+	Button btnMove, btnEnter;
 	EditText etText;
 	
 	@Override
@@ -31,13 +31,13 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		setContentView(R.layout.activity_main);		
 		
 		//ID에 해당되는 객체의 참조값 반환
-		btnButton1 = (Button)findViewById(R.id.button1);
-		btnButton2 = (Button)findViewById(R.id.button2);		
-		etText = (EditText)findViewById(R.id.editText1);
+		btnMove = (Button)findViewById(R.id.btnMove);
+		btnEnter = (Button)findViewById(R.id.btnEnter);		
+		etText = (EditText)findViewById(R.id.etText);
 		
 		//이벤트 소스와 이벤트 리스너 연결
-		btnButton1.setOnClickListener(this);
-		btnButton2.setOnClickListener(this);
+		btnMove.setOnClickListener(this);
+		btnEnter.setOnClickListener(this);
 	}
 
 	//이벤트 핸들러
@@ -46,10 +46,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		// 화면 이동
 		// 인텐트 객체 생성
 		Intent intent = null;
-		if(v.getId()==R.id.button1){
+		if(v.getId()==R.id.btnMove){
 								//현재 액티비티, 이동할 액티비티
 			intent = new Intent(this, SecondActivity.class);
-		}else if(v.getId()==R.id.button2){
+		}else if(v.getId()==R.id.btnEnter){
 			intent = new Intent(this, SecondActivity.class);
 			//Editable -> String
 			//화면 이동시에 이동된 화면에서 호출할 데이터를 저장
