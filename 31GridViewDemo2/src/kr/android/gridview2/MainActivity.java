@@ -37,6 +37,8 @@ public class MainActivity extends Activity {
 
 		
 	}
+	
+	
 	//추상 클래스 BaseAdapter를 상속하여 GridView에 이미지를 보여줄 수 있는 기능을 하는 내부 클래스 구현
 	public class ImageAdapter extends BaseAdapter{
 

@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
 		}		
 	}
 
-	//리스트뷰에 출력할 항목 
+	//리스트뷰에 출력할 항목 정의
 	class MyItem{
 		int icon;
 		String name;

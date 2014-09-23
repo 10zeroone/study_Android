@@ -28,6 +28,9 @@ public class MainActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		myTextView = (TextView)findViewById(R.id.tvView);
+		
 		//View만드는 adapter객체 생성
 		adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
 		
@@ -35,8 +38,6 @@ public class MainActivity extends ListActivity {
 		//ListActivity는 생성되는 Listview에 대한 정보를 가지고 있으며 listView는 ListActivity의 고유ID로 명시되어야 하며
 		//고유ID에 adapter가 등록됨
 		setListAdapter(adapter);
-		
-		myTextView = (TextView)findViewById(R.id.tvView);
 		
 	}
 	

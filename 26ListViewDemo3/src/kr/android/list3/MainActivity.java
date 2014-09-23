@@ -24,6 +24,10 @@ public class MainActivity extends Activity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		myEditText = (EditText)findViewById(R.id.etText);
+		btnAdd = (Button)findViewById(R.id.btnAdd);
+		btnDel = (Button)findViewById(R.id.btnDel);		
+		
 		//데이터 자장소 생성 및 데이터 추가
 		items = new ArrayList<String>();
 		items.add("First");
@@ -39,10 +43,6 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		//선택모드 지정(단일 선택)
 		myListView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-		
-		myEditText = (EditText)findViewById(R.id.etText);
-		btnAdd = (Button)findViewById(R.id.btnAdd);
-		btnDel = (Button)findViewById(R.id.btnDel);		
 		
 		//이벤트소스와 이벤트 리스너 연결
 		btnAdd.setOnClickListener(this);
@@ -61,7 +61,7 @@ public class MainActivity extends Activity implements OnClickListener{
 					//ListView갱신
 					adapter.notifyDataSetChanged();
 					//EditText 초기화
-					myEditText.setText("");;
+					myEditText.setText("");
 				}
 				//필수, 생략시 아래의 case구문이 수행되어 오류 발생
 				break;	
