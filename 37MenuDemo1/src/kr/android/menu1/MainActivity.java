@@ -35,8 +35,8 @@ public class MainActivity extends ListActivity {
 		/* Menu의 인자
 		 * groupid	: 메뉴 아이템 그룹 지정, 미지정시 Menu.NONE=0
 		 * itemid	: 메뉴 아이템 부여된 ID
-		 * order	: 메뉴 아이템이 표시될 순서, 미지정시 Menu.NONE=0
-		 * title	: 메뉴 아이템이 표시될 텍스트		
+		 * order	: 메뉴 아이템에 표시될 순서, 미지정시 Menu.NONE=0
+		 * title	: 메뉴 아이템에 표시될 텍스트		
 		*/
 		menu.add(Menu.NONE, 1, Menu.NONE, "16px");
 		menu.add(Menu.NONE, 2, Menu.NONE, "24px");
@@ -49,7 +49,7 @@ public class MainActivity extends ListActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		//메뉴를 클릭했을 때 이벤트 처리
-		switch(item.getItemId()){	//리스트의 각 아이템 사이의 높이 서렂ㅇ
+		switch(item.getItemId()){	//리스트의 각 아이템 사이의 높이 설정
 		case 1:
 			getListView().setDividerHeight(16);
 			break;

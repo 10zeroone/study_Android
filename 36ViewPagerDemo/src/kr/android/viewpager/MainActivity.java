@@ -98,7 +98,12 @@ public class MainActivity extends Activity {
 			return v;
 		}
 		
-		//View 按眉 昏力
+		/**
+		View 按眉 昏力
+		@param pager	: ViewPager
+	    @param position	: 昏力等 其捞瘤 position
+	    @param object	: instantiateItem(View, int)俊辑 府畔等 View
+	    */
 		@Override
 		public void destroyItem(View pager, int position, Object object){
 			

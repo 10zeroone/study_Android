@@ -25,12 +25,12 @@ public class MainActivity extends ListActivity {
 		//ListView에 Adapter객체 등록
 		setListAdapter(adapter);
 		
-		//컨텍스트 메뉴를 연결할 View의 객체를 등록
+		//컨텍스트 메뉴를 연결할 View 객체를 등록
 		registerForContextMenu(getListView());
 		
 	}
 	
-	//메뉴 생성
+	//컨텍스트 메뉴메뉴 생성
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View view, ContextMenu.ContextMenuInfo menuInfo){
 		
@@ -43,7 +43,7 @@ public class MainActivity extends ListActivity {
 		menu.add(Menu.NONE, 4, Menu.NONE, "40px");
 	}
 	
-	//컨텍스트 메뉴의 아이템 클릭에 따른 이벤트 발생에 대한 처리
+	//컨텍스트 메뉴의 아이템 클릭에 따른 이벤트 발생에 대한 이벤트 처리
 	@Override
 	public boolean onContextItemSelected(MenuItem item){
 		switch(item.getItemId()){
