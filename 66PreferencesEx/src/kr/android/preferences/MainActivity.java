@@ -30,7 +30,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		btnWrite.setOnClickListener(this);
 		btnRead.setOnClickListener(this);
 		btnMove.setOnClickListener(this);
-	}
+	} 
 
 	@Override
 	public void onClick(View v) {
