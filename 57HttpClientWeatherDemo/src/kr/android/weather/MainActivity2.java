@@ -243,6 +243,7 @@ public class MainActivity2 extends Activity {
 		return result.toString();
 	}
 	
+	
 	//날씨정보(지역, 날씨, 온도)를 저장할 클래스 객체 생성
 	class ForeCast{
 		String local;

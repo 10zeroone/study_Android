@@ -31,18 +31,18 @@ public class MainActivity extends ListActivity {
 		// XML읽어서 ArrayList에 담기
 		InputStream in = null;				
 		try{
-			//XML을 읽어서 InputStream생성
+			//1)XML을 읽어서 InputStream생성
 			in = getResources().openRawResource(R.raw.words);
 			
-			//DOM 파서 생성
+			//2)DOM 파서 생성
 			DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			
-			//InputStream을 읽어들여 DOM트리 생성
+			//3)InputStream을 읽어들여 DOM트리 생성
 			//import org.w3c.dom.Document;
 			Document doc = builder.parse(in);
 			
 			//NodeList words = doc.getDocumentElement().getElementsByTagName("word");
-			//<word>태그를 가진 노드 리스트 확인
+			//4)<word>태그를 가진 노드 리스트 확인
 			NodeList words = doc.getElementsByTagName("word");
 			
 			for(int i=0; i<words.getLength(); i++){

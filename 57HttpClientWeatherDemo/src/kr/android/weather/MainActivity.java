@@ -125,7 +125,7 @@ public class MainActivity extends Activity {
 	}
 	
 	
-	//XML파일을 DOM트리를 생성해서 파싱
+	//XML파일을 DOM트리를 생성해서 파싱 (DOM Parser)
 	public void buildForeCastsbyDOM(InputStream input){
 		
 		try{
@@ -208,9 +208,9 @@ public class MainActivity extends Activity {
 	
 	//날씨정보(지역, 날씨, 온도)를 저장할 클래스 객체 생성
 	class ForeCast{
-		String local;
-		String desc;
-		String ta;
+		String local;	//지역
+		String desc;	//날씨
+		String ta;		//온도
 		
 		public ForeCast(){}
 		

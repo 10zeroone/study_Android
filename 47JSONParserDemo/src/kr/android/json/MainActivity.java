@@ -28,10 +28,10 @@ public class MainActivity extends Activity {
 		AssetManager assetManager = getResources().getAssets();
 		
 		try{
-			//JSON파일 읽기
+			//1)JSON파일 읽기
 			AssetInputStream ais = (AssetInputStream)assetManager.open("sample.json");
 			
-			//byte스트림을 문자스트림으로 변환
+			//2)byte스트림을 문자스트림으로 변환
 			BufferedReader br = new BufferedReader(new InputStreamReader(ais, "UTF-8"));
 			
 			StringBuffer sb = new StringBuffer();
@@ -41,16 +41,16 @@ public class MainActivity extends Activity {
 				sb.append(result);
 			}
 			
-			//JSON데이터
+			//3)JSON데이터
 			String msg = sb.toString();
 			
-			//JSONObject  생성
+			//4)JSONObject생성
 			JSONObject jsonObject = new JSONObject(msg);
 			
 			String menu=jsonObject.getString("menu");
 			text.setText(menu+"\n");
 			
-			//JSONArray 생성
+			//5)JSONArray 생성
 			JSONArray jsonArray = new JSONArray(jsonObject.getString("member"));
 			
 			for( int i=0; i<jsonArray.length(); i++){

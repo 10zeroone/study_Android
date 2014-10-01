@@ -47,30 +47,6 @@ public class MainActivity1 extends Activity {
 		updateForeCast();
 	}
 	
-	//서버에 접근해서 XML데이터 요청
-	public InputStream getStreamFromURL(){
-		InputStream input = null;
-		
-		try{
-			HttpClient httpClient = new DefaultHttpClient();
-			HttpGet httpGet = new HttpGet(WEATHER_URL);
-			
-			//응답을 받을 객체
-			HttpResponse httpResponse = (HttpResponse)httpClient.execute(httpGet);
-			
-			//응답 수신 처리
-			HttpEntity httpEntity = httpResponse.getEntity();
-			BufferedHttpEntity bufferedHttpEntity = new BufferedHttpEntity(httpEntity);
-			input = bufferedHttpEntity.getContent();
-			
-		}catch(Exception e){
-			Log.e(TAG, "접속 오류", e);
-			
-		}
-		
-		return input;
-	}
-	
 	//스레드 호출
 	public void updateForeCast(){
 		//ProgressBar를 보여지게 처리
@@ -130,6 +106,30 @@ public class MainActivity1 extends Activity {
 		}catch(Exception e){
 			Log.e(TAG, "파싱 에러", e);
 		}		
+	}
+	
+	//서버에 접근해서 XML데이터 요청
+	public InputStream getStreamFromURL(){
+		InputStream input = null;
+
+		try{
+			HttpClient httpClient = new DefaultHttpClient();
+			HttpGet httpGet = new HttpGet(WEATHER_URL);
+
+			//응답을 받을 객체
+			HttpResponse httpResponse = (HttpResponse)httpClient.execute(httpGet);
+
+			//응답 수신 처리
+			HttpEntity httpEntity = httpResponse.getEntity();
+			BufferedHttpEntity bufferedHttpEntity = new BufferedHttpEntity(httpEntity);
+			input = bufferedHttpEntity.getContent();
+
+		}catch(Exception e){
+			Log.e(TAG, "접속 오류", e);
+
+		}
+
+		return input;
 	}
 	
 	//UI작업(데이터를 표시하기 위한 HTML)

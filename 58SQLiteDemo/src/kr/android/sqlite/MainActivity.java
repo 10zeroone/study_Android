@@ -68,9 +68,10 @@ public class MainActivity extends ListActivity implements OnClickListener {
 		int[] to = new int[]{R.id.tv_ID, R.id.tv_Cotent};
 		
 		//Table에 있는 데이터를 매칭시킬수 있도록 하기 위해 simpleCursorAdapter객체 생성
-		//min SDK version이 11이상이어야 함													// SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER: 데이터변동을 감시할 수 있도록 설정(의무사항)
+		//min SDK version이 11이상이어야 함					// SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER: 데이터변동을 감시할 수 있도록 설정(의무사항)
 		//simpleCursorAdapter = new SimpleCursorAdapter(context, layout, c, from, to, flags)
-		simpleCursorAdapter = new SimpleCursorAdapter(this, R.layout.memo_row, cursor, from, to, SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
+		simpleCursorAdapter = new SimpleCursorAdapter(this, R.layout.memo_row, cursor, from, to, 
+				SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
 		
 		//ListView에 SimpleCursorAdapter등록
 		setListAdapter(simpleCursorAdapter);
@@ -86,6 +87,7 @@ public class MainActivity extends ListActivity implements OnClickListener {
 		//SQLiteDatabase 종료
 		databaseAdapter.close();
 	}
+	
 
 	//검색된 내용 표시
 	private void toastMemo(String str){

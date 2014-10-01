@@ -24,9 +24,10 @@ public class DatabaseAdapter {
 	//컬럼 명세
 	static final String[] PROJECTION = new String[]{MEMO_ID, MEMO_CONTENT};
 	//테이블 생성 SQL
-																			//MEMO_ID: integer타입에 기본키, 자동증가				MEMO_CONTENT: NULL값이 입력되지 않도록 처리							
+									//MEMO_ID: integer타입에 기본키, 자동증가				MEMO_CONTENT: NULL값이 입력되지 않도록 처리							
 	//(주의)구문에 띄어쓰기 정확하게 작성할것
-	static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + " ("+MEMO_ID+" integer PRIMARY KEY AUTOINCREMENT, " + MEMO_CONTENT + " text NOT NULL)";
+	static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME 
+			+ " ("+MEMO_ID+" integer PRIMARY KEY AUTOINCREMENT, " + MEMO_CONTENT + " text NOT NULL)";
 	                    
 	//테이블 삭제 SQL
 	//TABLE_NAME의 테이블이 존재하는 경우 해당 테이블 삭제
@@ -76,11 +77,16 @@ public class DatabaseAdapter {
 	//새로운 데이터를 추가(Insert)하기 위한 메소드
 	//데이터를 추가하고 추가된 데이터의 PRIMARY KEY를 반환
 	public String addMemo(String content){
+		//SQLite의 데이터 타입에 맞춰 동작하도록 구성된 ContentValues 객체를 사용하여 데이터베이스 컬럼에 들어갈 데이터를 저장		
 		ContentValues values = new ContentValues();
 		//MEMO_CONTENT필드에 content 인자값를 넣토록 설정
 		values.put(MEMO_CONTENT, content);
 		//PRIMARY KEY
-		long id =db.insert(TABLE_NAME, null, values);
+		long id =db.insert(TABLE_NAME, //테이블명
+//											insert into 테이블명(필드1, 필드2, ·······) values (값1, 값2, ·······) 혹은 insert into 테이블명 values (값1, 값2, ·······)
+//											- 테이블명만 쓸 경우는 모든 필드값을 다 입력 한 경우에만 사용가능
+				null, 		//옵션(일반적으로 null), 모든 필드값을 다 입력하지 않은 경우 나머지 필드에는 기본값 혹은 null값이 입력됨
+				values);	//추가할 데이터
 		
 		if(id<0){
 			return "";
@@ -192,8 +198,8 @@ public class DatabaseAdapter {
 	        //null		: 커서 팩토리(보통 null지정) 
 	        //1			: 데이터베이스 스키마 버전 (디비 업데이트시 스키마 버전 업데이트 함)
 		}
-		
-		//처음 일회 동작
+
+		//DB가 처음 만들어질 때 호출되며 테이블을 생성하고 초기 레코드 삽입을 하게 됩니다.
 		@Override
 		public void onCreate(SQLiteDatabase db) {
 			// 테이블 생성

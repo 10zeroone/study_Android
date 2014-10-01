@@ -37,19 +37,19 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		InputStream in = null;
 		
 		try{
+			//1)XML을 읽어서 InputStream생성
 			in = getResources().openRawResource(R.raw.product);
 			
-			//DOM파서 생성
+			//2)DOM파서 생성
 			DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			
-			//DOM트리 생성
+			//3)DOM트리 생성
 			Document doc = builder.parse(in);
 			
+			//4)<item>태그를 가진 노드 리스트 확인
+			NodeList orders = doc.getElementsByTagName("item");
 			//StringBuffer생성
 			StringBuffer sb = new StringBuffer();
-			
-			//<item>태그를 가진 노드 리스트 확인
-			NodeList orders = doc.getElementsByTagName("item");
 			sb.append("주문항목\n");			 
 			
 			for(int i=0; i<orders.getLength(); i++){

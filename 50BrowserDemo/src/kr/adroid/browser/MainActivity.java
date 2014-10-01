@@ -46,6 +46,7 @@ public class MainActivity extends Activity {
 		//자바 스크립트 허용
 		browser.getSettings().setJavaScriptEnabled(true);		
 		
+		
 		MyWebChromeClient myWebChromeClient = new MyWebChromeClient();		
 		//브라우저에 등록
 		browser.setWebChromeClient(myWebChromeClient);
