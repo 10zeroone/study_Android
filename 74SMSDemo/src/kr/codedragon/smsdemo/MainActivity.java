@@ -30,8 +30,10 @@ public class MainActivity extends Activity {
         //1. 기본 API로 문자 보내기
         //새로운 Intent 생성
         Intent intent = new Intent(Intent.ACTION_VIEW); 
+        
         //intentSendSMS의 "sms_body"영역에 "content" 대입
         intent.putExtra("sms_body", "content"); 		   
+        
         //intentSendSMS의 타입 설정 ("vnd.android-dir/mms-sms"는 문자 전송 API)
         intent.setType("vnd.android-dir/mms-sms");	   
         
@@ -81,6 +83,7 @@ public class MainActivity extends Activity {
 				{
 					case Activity.RESULT_OK: // 정상적으로 발신일 경우
 					{
+						//getBaseContext(): Activity의 Context 생성자나 Context에서 기본 설정 된 Context
 						Toast.makeText(getBaseContext(), "RESULT_OK", Toast.LENGTH_SHORT).show(); 
 						
 						break;

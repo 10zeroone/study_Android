@@ -13,6 +13,7 @@ public class NewsService extends Service{
 	//스레드 종료처리를 위한 변수
 	boolean bQuit;
 	
+	//다른 컴포넌트가 bindService()를 호출해 서비스와 연결 시도시 호출됩니다.
 	@Override
 	public IBinder onBind(Intent intent) {
 		return null;

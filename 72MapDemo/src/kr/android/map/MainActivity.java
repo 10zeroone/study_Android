@@ -76,7 +76,8 @@ public class MainActivity extends Activity implements OnMarkerClickListener, OnI
 				.icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
 		//map.addMarker(new MarkerOptions().position(ADDR_GANGNAMSTYLE2).title("강남스테이지").snippet("여기서 사진 찍어요~").icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_flag)));
 		
-		map.addMarker(new MarkerOptions().position(ADDRESS_STUDY).title("미래인재").snippet("열공 중~").icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_flag)));
+		map.addMarker(new MarkerOptions().position(ADDRESS_STUDY).title("미래인재").snippet("열공 중~")
+				.icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_flag)));
 		
 	}
 

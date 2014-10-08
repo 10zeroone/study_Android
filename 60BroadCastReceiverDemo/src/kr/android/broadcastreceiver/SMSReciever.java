@@ -61,6 +61,7 @@ public class SMSReciever extends BroadcastReceiver{
 		//2. Notification.Builder 객체 생성
 		Notification.Builder builder = new Notification.Builder(context);
 		
+		
 		//3.알림 메시지 클릭시 이동할 Activity지정
 		Intent intent = new Intent(context, NotificationMessage.class);
 		
@@ -76,8 +77,9 @@ public class SMSReciever extends BroadcastReceiver{
 		 * FLAG_ONE_SHOT		: 이 플래그를 이용해 생성된 PendingIntent는 단 한번 밖에 사용될 수 없음
 		 * FLAG_UPDATE_CURRENT	: 만일 이미 생성된 PendingIntent가 존재한다면 해당 intent의 내용을 변경	
 		*/
+		
 		//5.builder객체 설정
-		//알림창 최상단의 아이콘 옆에 보여지는 알림메시지 제일 상단에 표시		
+		//알림창 최상단의 아이콘 옆에 알림메시지 제일 상단에 표시		
 		builder.setTicker(address + " : " + message);
 		//알림메시지를 클릭해서 Activity를 호출하면 자동으로 알림메시지 제거(true:제거, false:미제거)
 		builder.setAutoCancel(true);

@@ -54,7 +54,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		mediaPlayer = new MediaPlayer();
 		//1)대상 파일 지정
-		//오디오파일을 지정된 형식을 통해 읽어오기
+		//오디오파일을 지정된 형식로  읽어오기
 		mediaPlayer.setDataSource(sd_path.getAbsolutePath()+"/audio02.mp3");
 		//2)재생 준비
 		//대용량인 경우 환경에 따라 상당한 시간이 걸릴 수 있으므로
@@ -118,7 +118,7 @@ public class MainActivity extends Activity implements OnClickListener{
 				
 				
 				//서버영역 재생
-				//playAudioServer(AUDIO_PATH);
+				playAudioServer(AUDIO_PATH);
 				
 			} catch (Exception e) {
 				Log.e("AudioDemo", "Play Error", e);

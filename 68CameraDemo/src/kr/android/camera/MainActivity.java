@@ -95,6 +95,7 @@ public class MainActivity extends Activity {
 				//1/16로 줄임으로써 해상도를 낮춤
 				opts.inSampleSize = 16;
 				
+				//이미지, 이미지의 offset, 길이, 디코딩시 옵션
 				Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length, opts);
 				ivRawImage.setImageBitmap(bitmap);
 				
