@@ -35,8 +35,9 @@ public class MainActivity extends Activity {
 		
 		
 		//HTML 직접 생성
-		/*String msg ="<html><body>Hellow Android World!!!</body></html>";		
-		//baseURL, data, mimeType	:문서타입, encoding, historyUrl
+		/*
+		String msg ="<html><body>Hellow Android World!!!</body></html>";		
+		//baseURL, data, mimeType(문서타입), encoding, historyUrl
 		browser.loadDataWithBaseURL(null, msg, "text/html", "UTF-8", null);*/
 		
 		

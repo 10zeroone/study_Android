@@ -26,7 +26,8 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		myEditText = (EditText)findViewById(R.id.etText);
 		btnAdd = (Button)findViewById(R.id.btnAdd);
-		btnDel = (Button)findViewById(R.id.btnDel);		
+		btnDel = (Button)findViewById(R.id.btnDel);
+		myListView = (ListView)findViewById(R.id.lvList);
 		
 		//데이터 자장소 생성 및 데이터 추가
 		items = new ArrayList<String>();
@@ -37,7 +38,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		//라디오버튼으로 선택할 수  ListView만드는 adapter객체 생성 
 		adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, items);
 		
-		myListView = (ListView)findViewById(R.id.lvList);
+		
 		//ListView에 ArrayAdapter등록
 		myListView.setAdapter(adapter);
 		
@@ -47,6 +48,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		//이벤트소스와 이벤트 리스너 연결
 		btnAdd.setOnClickListener(this);
 		btnDel.setOnClickListener(this);
+		
 	}
 
 	//이벤트 핸들러

@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
 						Thread.sleep(1000);
 						//웹에서 데이터를 읽어온다고 가정
 						//스레드에서 UI에 접근하려면 Handler객체를 이용해서 접근함
-						//post()는  Runnable객체를 인수로 넣어야 함
+						//post()는  Runnable객체를 인수로 넣어야 함(Runnable객체를 받아 메시지 큐에 넣어 실행)
 						handler.post(new Runnable() {
 							@Override
 							public void run() {

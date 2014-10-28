@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
         
         //초기의 선택된 것 표시
         RadioButton rb = (RadioButton)findViewById(rGroup.getCheckedRadioButtonId());
-        tv.setText("기본 선택: "+ rb.getText());       
+        tv.setText("기본 선택: "+ rb.getText());    
         
         //이벤트소스와 이벤트 리스너 연결-익명 내부 클래스 사용
         rGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {        	

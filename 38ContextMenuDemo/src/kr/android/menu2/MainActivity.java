@@ -32,7 +32,8 @@ public class MainActivity extends ListActivity {
 	
 	//컨텍스트 메뉴메뉴 생성
 	@Override
-	public void onCreateContextMenu(ContextMenu menu, View view, ContextMenu.ContextMenuInfo menuInfo){
+	public void onCreateContextMenu(ContextMenu menu, View view, 
+				ContextMenu.ContextMenuInfo menuInfo){
 		
 		//컨텍스트 메뉴 생성
 		menu.setHeaderTitle("Divider 변경");

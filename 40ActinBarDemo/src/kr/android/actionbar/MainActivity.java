@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
 		//서브타이틀 셋팅
 		actionBar.setSubtitle("SubTitle of ActionBar");
 		
-		//타이틀 영역을 제거하고 아이콘만 보이게 하기
+		//타이틀 영역을 제거하고 아이콘만 보이게 셋팅
 		actionBar.setDisplayShowTitleEnabled(false);
 		
 		//ActionBar 숨기기

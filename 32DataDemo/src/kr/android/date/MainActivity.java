@@ -90,6 +90,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		}else if(v.getId()==R.id.btnTimeSelect){	//시간 설정
 			new TimePickerDialog(this, timepickerListener, dateAndTime.get(Calendar.HOUR_OF_DAY), 
 					dateAndTime.get(Calendar.MINUTE), true).show();
+							//true:24시간 or false:AM/PM(오전/오후)
 		}
 	}
 }

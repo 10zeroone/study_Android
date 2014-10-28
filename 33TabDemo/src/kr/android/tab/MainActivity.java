@@ -28,7 +28,6 @@ public class MainActivity extends Activity {
 		//3)TabHost에 등록
 		myTabHost.addTab(tabSpec);
 		
-		
 		//두번째 Tab 작업 (버튼)
 		//TabSpec객체 생성
 		tabSpec = myTabHost.newTabSpec("tag_button");

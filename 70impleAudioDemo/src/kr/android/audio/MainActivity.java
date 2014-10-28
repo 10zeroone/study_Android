@@ -118,7 +118,7 @@ public class MainActivity extends Activity implements OnClickListener{
 				
 				
 				//서버영역 재생
-				playAudioServer(AUDIO_PATH);
+				//playAudioServer(AUDIO_PATH);
 				
 			} catch (Exception e) {
 				Log.e("AudioDemo", "Play Error", e);

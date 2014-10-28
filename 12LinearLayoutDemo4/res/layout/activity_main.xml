@@ -12,7 +12,7 @@ margin: view와 view, view와 layout사이의 간격
 android:layout_margin="50dp"
 
 padding: view의 내부 간격
-android:padding="50pd"   
+android:padding="50pd"
  -->    
     
     <Button 

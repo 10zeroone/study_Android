@@ -98,6 +98,7 @@ public class MainActivity extends Activity {
 			return v;
 		}
 		
+		
 		/**
 		View ∞¥√º ªË¡¶
 		@param pager	: ViewPager

@@ -40,6 +40,17 @@ public class MainActivity extends Activity implements View.OnClickListener{
         
         //버튼 이벤트 소스와 이벤트 리스너 연결
         btn.setOnClickListener(this);
+  
+        /*
+        이벤트(Event)	: 자바 프로그램에서 어떤 특정한 행동이 발생한 그 자체를 의미
+        			     예를들면 버튼을 클릭, 메뉴를 선택등의 행위
+        이벤트 소스		: 이벤트 발생 근원, 버튼
+        이벤트 리스너	: onClickListener에 연결된 UI오브젝트(버튼)이 클릭되면 호출
+        이벤트 핸들러	: 사용자 조작, 값 변경등 다양한 이벤트에 대한 처리기능을 수행,
+        		     해당 이벤트 발생시 수행
+        메소드			: 수행할 특정 동작(기능) 미리 정의하고 해당 메소드를 호출하여 수행
+        */	
+        
         
         updateTime();
     }

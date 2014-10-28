@@ -34,6 +34,4 @@ public class MainTwo extends Activity{
 			}
 		});
 	}
-
-	
 }

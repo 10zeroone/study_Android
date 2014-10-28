@@ -4,9 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
-import android.widget.AdapterView;
+
 
 public class MainActivity extends Activity implements AdapterView.OnItemClickListener{
 
