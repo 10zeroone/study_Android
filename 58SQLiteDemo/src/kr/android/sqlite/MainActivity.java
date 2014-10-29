@@ -65,10 +65,10 @@ public class MainActivity extends ListActivity implements OnClickListener {
 		
 		//데이블의 컬럼과 뷰를 연결
 		String[] from = DatabaseAdapter.PROJECTION;
-		int[] to = new int[]{R.id.tv_ID, R.id.tv_Cotent};
+		int[] to = new int[]{R.id.tv_ID, R.id.tv_Content};
 		
 		//Table에 있는 데이터를 매칭시킬수 있도록 하기 위해 simpleCursorAdapter객체 생성
-		//min SDK version이 11이상이어야 함					// SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER: 데이터변동을 감시할 수 있도록 설정(의무사항)
+		//min SDK version이 11이상이어야 함				// SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER: 데이터변동을 감시할 수 있도록 설정(의무사항)
 		//simpleCursorAdapter = new SimpleCursorAdapter(context, layout, c, from, to, flags)
 		simpleCursorAdapter = new SimpleCursorAdapter(this, R.layout.memo_row, cursor, from, to, 
 				SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
@@ -89,6 +89,7 @@ public class MainActivity extends ListActivity implements OnClickListener {
 	}
 	
 
+	
 	//검색된 내용 표시
 	private void toastMemo(String str){
 		if(str.length() ==0){
@@ -145,7 +146,7 @@ public class MainActivity extends ListActivity implements OnClickListener {
 		
 		//TAP된 행의 ID와 Content정보를 갖고 있는 레이아웃 호출
 		LinearLayout layout   =(LinearLayout)view;
-		TextView tv_Content = (TextView)layout.findViewById(R.id.tv_Cotent);
+		TextView tv_Content = (TextView)layout.findViewById(R.id.tv_Content);
 		etEditMemo.setText(tv_Content.getText());
 		tv_mCurrentID.setText(Long.toString(id));
 		

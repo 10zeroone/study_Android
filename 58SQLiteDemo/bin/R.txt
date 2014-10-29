@@ -301,7 +301,7 @@ int id tabMode 0x7f050002
 int id title 0x7f05002b
 int id top_action_bar 0x7f050020
 int id tvId 0x7f05003e
-int id tv_Cotent 0x7f050045
+int id tv_Content 0x7f050045
 int id tv_ID 0x7f050044
 int id up 0x7f050021
 int id useLogo 0x7f050003

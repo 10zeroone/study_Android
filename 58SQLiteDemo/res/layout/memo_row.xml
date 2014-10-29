@@ -16,7 +16,7 @@
 
     <!-- content표시 -->
     <TextView
-        android:id="@+id/tv_Cotent"
+        android:id="@+id/tv_Content"
         android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
