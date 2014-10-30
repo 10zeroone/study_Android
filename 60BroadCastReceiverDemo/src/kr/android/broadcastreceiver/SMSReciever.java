@@ -56,7 +56,8 @@ public class SMSReciever extends BroadcastReceiver{
 	//Context: 어플리케이션의 정보를 가짐
 	private void addNotificationStatusBar(Context context, String address, String message){
 		//1. NotificationManager 얻기
-		NotificationManager notificationManager = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
+		NotificationManager notificationManager = 
+				(NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
 		
 		//2. Notification.Builder 객체 생성
 		Notification.Builder builder = new Notification.Builder(context);
@@ -79,16 +80,21 @@ public class SMSReciever extends BroadcastReceiver{
 		*/
 		
 		//5.builder객체 설정
-		//알림창 최상단의 아이콘 옆에 알림메시지 제일 상단에 표시		
+		//알림창 최상단의 아이콘 옆에 알림메시지 제일 상단에 표시
+		//알림창 상단에 알림메시지를 출력
 		builder.setTicker(address + " : " + message);
+		
 		//알림메시지를 클릭해서 Activity를 호출하면 자동으로 알림메시지 제거(true:제거, false:미제거)
 		builder.setAutoCancel(true);
+		
 		//알림메시지 아이콘 설정
 		builder.setSmallIcon(R.drawable.ic_launcher);
+		
 		//알림메시지 컨텐트 항목의 주소 표시
 		builder.setContentTitle(address);
-		//알림메시지 컨텐트의 문자 내용
+		//알림메시지 컨텐트 항목의 문자 내용
 		builder.setContentText(message);
+		
 		//이동할 Activity정보를 갖고 잇는 PendingIntent등록 
 		builder.setContentIntent(pendingIntent);
 		

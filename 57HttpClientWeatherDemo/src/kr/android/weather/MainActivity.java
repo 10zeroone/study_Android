@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
 	}
 	
 	
-	//스레드 호출
+	//(5) 스레드 호출
 	public void updateForeCast(){
 		//ProgressBar를 보여지게 처리
 		progressBar.setVisibility(View.VISIBLE);
@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
 	}
 	
 	
-	//XML파일을 읽어들여 XmlPullParser가 파싱
+	//(4-2) XML파일을 읽어들여 XmlPullParser가 파싱
 	public void buildForeCastsbyXMLPullParser(InputStream input){
 		String local = null;
 		String desc= null;
@@ -125,7 +125,7 @@ public class MainActivity extends Activity {
 	}
 	
 	
-	//XML파일을 DOM트리를 생성해서 파싱 (DOM Parser)
+	//(4-1) XML파일을 DOM트리를 생성해서 파싱 (DOM Parser)
 	public void buildForeCastsbyDOM(InputStream input){
 		
 		try{
@@ -158,7 +158,7 @@ public class MainActivity extends Activity {
 		}		
 	}
 	
-	//서버에 접근해서 XML데이터 요청
+	//(3) 서버에 접근해서 XML데이터 요청
 	public InputStream getStreamFromURL(){
 		InputStream input = null;
 
@@ -183,7 +183,7 @@ public class MainActivity extends Activity {
 	}
 
 	
-	//UI작업(데이터를 표시하기 위한 HTML)
+	//(2) UI작업(데이터를 표시하기 위한 HTML)
 	public String generatePage(){	
 		
 		StringBuffer result = new StringBuffer("<html><body><table width=100%>");
@@ -206,7 +206,7 @@ public class MainActivity extends Activity {
 		return result.toString();
 	}
 	
-	//날씨정보(지역, 날씨, 온도)를 저장할 클래스 객체 생성
+	//(1) 날씨정보(지역, 날씨, 온도)를 저장할 클래스 객체 생성
 	class ForeCast{
 		String local;	//지역
 		String desc;	//날씨
