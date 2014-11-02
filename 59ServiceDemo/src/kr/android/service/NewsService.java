@@ -27,6 +27,9 @@ public class NewsService extends Service{
 		NewsThread newsThread = new NewsThread();
 		newsThread.start();
 		
+		//bQuit 디폴트값이 false인 것 확인 
+		//Toast.makeText(this, Boolean.toString(bQuit), Toast.LENGTH_LONG).show();
+		
 		return super.onStartCommand(intent, flags, startId);
 	}
 
